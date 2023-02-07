@@ -22,10 +22,8 @@ function App() {
       // eslint-disable-next-line array-callback-return
       users.filter((user) => {
         if (query === "") {
-          console.log(user);
           return user;
         } else if (user.name.toLowerCase().includes(query.toLowerCase())) {
-          console.log(user);
           return user;
         }
       }),
@@ -117,7 +115,7 @@ function App() {
                 </tr>
               </thead>
               {filteredUsers.map((user) => (
-                <tbody>
+                <tbody key={crypto.randomUUID()}>
                   <tr>
                     <th>{user.id}</th>
                     <td>{user.name}</td>
