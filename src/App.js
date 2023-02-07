@@ -38,7 +38,7 @@ function App() {
           {/* Navbar */}
           <div className="navbar bg-base-300">
             <div className="flex-1">
-              <h1 className="btn btn-ghost normal-case text-xl">Logo</h1>
+              <h1 className="btn btn-ghost normal-case text-xl">Portal</h1>
             </div>
             <div className="flex-none gap-2">
               <div className="form-control">
